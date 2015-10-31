@@ -3,11 +3,11 @@
 
 $(function() { 
   // Replay button
-  $('button').on('click', function(e) {
+  $('p.name').on('click', function(e) {
     e.preventDefault();
     setTimeout(function() {
       drawSVGPaths('svg', 1000, 2000, 50);
-      $('button').blur();
+      $('p.name').blur();
     }, 300);
   });
 });

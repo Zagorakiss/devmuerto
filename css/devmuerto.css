@@ -1,10 +1,15 @@
-/*Colors: ------------------
+/*COLORS: ------------------
 
 #ffa500 - orange
 #271900 - brown
 #ff2500 - red
-Colors ---------------- END*/
+#336d30 - green
+
+COLORS END ---------------- */
 /**/
+
+
+
 
 /*FONT*/
 @font-face {
@@ -18,6 +23,9 @@ Colors ---------------- END*/
 }
 
 /*FONT END*/
+
+
+
 
 /*HEADER -----------------------------------------------*/
 header {
@@ -37,6 +45,11 @@ header #skull p.name {
   font-size: 12vh;
   margin-top: -10vh;
 }
+
+header #skull p.name:hover {
+  cursor: pointer;
+}
+
 header #skull button {
   display: block;
   color: rgba(255, 255, 255, 0.7);
