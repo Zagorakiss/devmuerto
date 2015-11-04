@@ -147,6 +147,22 @@ main.content-wrapper#content-wrapper {
  font-family: Inconsolata;
 }
 
+section {
+  text-align: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgba(255,165,0,0.5);
+  position: relative;
+  border-top: 10px dashed #336d30;
+  padding: 30px;
+}
+
+section:first-child {
+  border-top: 0;
+}
+
 section.about-me {
   width: 100vw;
   max-width: 100%;
@@ -173,6 +189,10 @@ section.about-me {
   background-position: -210px;
   border-radius: 100px;
 }
+.about-me .avatar:active {
+  background-position: -210px;
+  border-radius: 100px;
+}
 .about-me h1 {
   font-size: 4rem;
   color: #271900;
@@ -184,14 +204,14 @@ color: #271900;
 text-align: center;
 }
 .about-me a.btn {
-  display: block;
+  display: inline-block;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   font-size: 2.5rem;
   padding: 10px 20px;
   border: 2px solid #ff2500;
-  width: 20vw;
+  min-width: 20vw;
 }
 
 
