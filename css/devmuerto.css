@@ -21,7 +21,7 @@ COLORS END ---------------- */
        url('/fonts/mex.ttf')  format('truetype'),  /*Safari, Android, iOS*/
        url('/fonts/mex.svg#Mex') format('svg'); /* Legacy iOS */
 }
-
+/*Also "Inconsolata" in the head of html*/
 /*FONT END*/
 
 
@@ -30,7 +30,7 @@ COLORS END ---------------- */
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
+  font-size: 62.5%; /*REM TRICK*/
 }
 
 
@@ -147,6 +147,10 @@ main.content-wrapper#content-wrapper {
  font-family: Inconsolata;
 }
 
+.wrapper {
+  display: inline-block;
+}
+
 section {
   text-align: center;
   width: 100vw;
@@ -158,6 +162,109 @@ section {
   border-top: 10px dashed #336d30;
   padding: 30px;
 }
+
+section h1 {
+  font-size: 3.3rem;
+  /*font-size: 6.5vh;*/
+  display: inline-block;
+  color: #271900;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: dashed;
+  border-color: #271900;
+}
+
+section p {
+font-size: 2.2rem;
+/*font-size: 4vh;*/
+color: #271900;
+text-align: center;
+}
+
+section a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2.2rem;
+  padding: 10px 20px;
+  min-width: 16vw;
+  border-radius: 20px;
+  border: 2px dashed #271900;
+  color: #271900;
+  text-decoration: none;
+  transition: all 0.5s ease-out 0s;
+}
+
+section a.btn:hover {
+  border: 2px solid #271900;
+}
+
+section a.btn:active {
+  border: 2px solid #271900;
+}
+
+
+/*SVG LETTER*/
+section svg#letter {
+  /*margin: -21px 0 0 -9px;*/
+  width: 42p;
+  height: 18px;
+  fill: #271900;
+}
+svg#letter .line {
+  -webkit-animation: sliding 0.7s infinite;
+          animation: sliding 0.7s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.71, 0.18, 0.38, 0.95);
+          animation-timing-function: cubic-bezier(0.71, 0.18, 0.38, 0.95);
+  opacity: 0.8;
+}
+svg#letter .line + .line {
+  -webkit-animation-delay: 0.07s;
+          animation-delay: 0.07s;
+  opacity: 0.6;
+}
+svg#letter .line + .line + .line {
+  -webkit-animation-delay: 0.14s;
+          animation-delay: 0.14s;
+  opacity: 0.4;
+}
+
+@-webkit-keyframes sliding {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-3px) scaleX(0.98);
+            transform: translateX(-3px) scaleX(0.98);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes sliding {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-3px) scaleX(0.98);
+            transform: translateX(-3px) scaleX(0.98);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*SVG LETTER END*/
+
+
+
 
 section:first-child {
   border-top: 0;
@@ -192,26 +299,6 @@ section.about-me {
 .about-me .avatar:active {
   background-position: -210px;
   border-radius: 100px;
-}
-.about-me h1 {
-  font-size: 4rem;
-  color: #271900;
-  text-align: center;
-}
-.about-me p {
-font-size: 2.5rem;
-color: #271900;
-text-align: center;
-}
-.about-me a.btn {
-  display: inline-block;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  font-size: 2.5rem;
-  padding: 10px 20px;
-  border: 2px solid #ff2500;
-  min-width: 20vw;
 }
 
 
