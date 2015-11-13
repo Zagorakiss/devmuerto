@@ -17,12 +17,34 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	font-size: 5rem;
+	font-size: 6.6rem;
+	color: #271900;
+
+	
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+
+.social [class^="icon-"], .social [class*=" icon-"] {
+	font-size: 3.3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.social [class^="icon-"]:hover, .social [class*=" icon-"]:hover {
+	color: #336d30;
+	-webkit-animation: rubberBand 1s;
+  	animation: rubberBand 1s;
+ 	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+}
+
+
+
+
 
 .icon-twitter:before {
 	content: "\f099";
@@ -105,9 +127,9 @@
 .icon-git:before {
 	content: "\e90a";
 }
-.icon-codepen2 {
+/*.icon-codepen2 {
 	font-size: 3.3rem;
-}
+}*/
 .icon-codepen2:before {
 	content: "\e90b";
 }

@@ -31,6 +31,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 62.5%; /*REM TRICK*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -183,6 +185,16 @@ color: #271900;
 text-align: center;
 }
 
+section p.social {
+  font-size: 3.3rem;
+  color: #271900;
+  padding: 0;
+  margin-top: 2.2rem;
+  margin-bottom: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
 section a.btn {
   display: inline-block;
   vertical-align: middle;
@@ -196,16 +208,30 @@ section a.btn {
   border: 2px dashed #271900;
   color: #271900;
   text-decoration: none;
-  transition: all 0.5s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
 }
 
 section a.btn:hover {
   border: 2px solid #271900;
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
+
 
 section a.btn:active {
   border: 2px solid #271900;
+  background-color: #336d30;
 }
+
+
+section .social a {
+  text-decoration: none;
+}
+
+
+
 
 
 /*SVG LETTER*/
@@ -308,6 +334,70 @@ section.types-of-projects {}
 section.portfolio {}
 section.lab {}
 section.contacts {}
+
+
+
+
+
+/*ANIMATE ----------------------------------- */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delayed {
+  animation-delay: 10s;
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+/*ANIMATE END --------------------------------- */
 
 
 
