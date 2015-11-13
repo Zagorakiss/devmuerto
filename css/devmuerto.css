@@ -159,8 +159,9 @@ section {
   margin: auto;
   background-color: rgba(255,165,0,0.5);
   position: relative;
-  border-top: 10px dashed #336d30;
+  /*border-top: 10px dashed #336d30;*/
   padding: 30px;
+  padding-bottom: 1px;
 }
 
 section h1 {
@@ -307,6 +308,56 @@ section.types-of-projects {}
 section.portfolio {}
 section.lab {}
 section.contacts {}
+
+
+
+
+
+
+
+/*DEVIDER ---------------------------------- */
+.hr {
+  display: block;
+  max-height: 5px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 0 0 0 15px;
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+
+.hr-line {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background-color: #271900;
+  animation: pendulum 3s infinite;
+}
+
+@keyframes pendulum {
+    0%   {transform: translateX(0vw);}
+    25%  {transform: translateX(1vw);}
+    50%  {transform: translateX(0vw);}
+    75%  {transform: translateX(-1vw);}
+    100% {transform: translateX(0vw);}
+}
+
+
+.hr-break { 
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 1%;
+  height: 5px;
+  background-color: transparent;
+}
+/*DEVIDER END ------------------------- */
+
+
+
 
 /*MAIN END ---------------------------------------------------------- */
 
