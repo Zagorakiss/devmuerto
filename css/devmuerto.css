@@ -186,6 +186,7 @@ text-align: center;
 }
 
 section p.social {
+  display: inline-block;
   font-size: 3.3rem;
   color: #271900;
   padding: 0;
@@ -193,6 +194,10 @@ section p.social {
   margin-bottom: 0;
   vertical-align: middle;
   text-align: center;
+}
+
+section .social a {
+  text-decoration: none;
 }
 
 section a.btn {
@@ -226,9 +231,7 @@ section a.btn:active {
 }
 
 
-section .social a {
-  text-decoration: none;
-}
+
 
 
 
