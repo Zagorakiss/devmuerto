@@ -186,7 +186,6 @@ text-align: center;
 }
 
 section p.social {
-  display: inline-block;
   font-size: 3.3rem;
   color: #271900;
   padding: 0;
@@ -197,6 +196,7 @@ section p.social {
 }
 
 section .social a {
+  display: inline-block;
   text-decoration: none;
 }
 
