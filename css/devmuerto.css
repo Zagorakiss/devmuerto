@@ -196,7 +196,7 @@ section p.social {
 }
 
 section .social a {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
 }
 
