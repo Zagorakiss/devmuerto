@@ -197,8 +197,8 @@ section p.social {
 }
 
 section .social a {
-  /*display: inline-block;*/
-  float: left;
+  display: inline-block;
+  /*float: left;*/
   text-decoration: none;
 }
 
