@@ -28,6 +28,10 @@
 }
 
 
+
+
+
+
 .social [class^="icon-"], .social [class*=" icon-"] {
 	font-size: 3.3rem;
 	padding-left: 2rem;
@@ -41,6 +45,19 @@
  	-webkit-animation-fill-mode: both;
   	animation-fill-mode: both;
 }
+
+
+
+
+
+
+.my-work__icons [class^="icon-"], .my-work__icons [class*=" icon-"] {
+	font-size: 10vh;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+
 
 
 
