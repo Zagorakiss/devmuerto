@@ -360,6 +360,8 @@ $(document).ready(function() {
                         "function": echo
                 }];
 
+        var hintMessage = "Try 'help' or 'list'";
+
 function processCommand() {
         var isValid = false;
 
@@ -489,7 +491,7 @@ title.text("urname@dvmrt: ~");
 var date = new Date().toString(); date = date.substr(0, date.indexOf("GMT") - 1);
 
 // Display last-login and promt
-terminal.append("Last login: " + date + "\n"); displayPrompt();
+terminal.append("Last login: " + date + "\n" + hintMessage + "\n"); displayPrompt();
 });
 
 

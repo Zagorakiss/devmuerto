@@ -193,7 +193,7 @@ section h1 {
   border-color: #271900;
 }
 
-section p {
+section p, div p {
 font-size: 2.2rem;
 /*font-size: 4vh;*/
 color: #271900;
@@ -523,16 +523,15 @@ section.my-work {}
 }
 
 .terminal-section .container {
-  background-image: -webkit-radial-gradient(center, circle cover, #ffa500 0%, #271900 80%);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .terminal textarea, input, button {
   outline: none;
 }
 
-.window-button, .window .buttons .close, .window .button .minimize, .window .buttons .maximize {
+.window-button, .window .buttons .close, .window .buttons .minimize, .window .buttons .maximize {
   padding: 0;
   margin: 0;
   margin-right: 4px;
@@ -545,6 +544,7 @@ section.my-work {}
 }
 
 .window {
+  background-image: -webkit-radial-gradient(center, circle cover, #ffa500 0%, transparent 90%);
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -584,7 +584,7 @@ section.my-work {}
   padding: 4px;
   background-color: black;
   opacity: 0.7;
-  height: 218px;
+  height: 300px;
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-weight: 200;
