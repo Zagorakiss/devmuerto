@@ -176,13 +176,21 @@ section {
   text-align: center;
   width: 100vw;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   margin: auto;
   background-color: rgba(255,165,0,0.5);
   position: relative;
   /*border-top: 10px dashed #336d30;*/
   padding: 30px;
   padding-bottom: 1px;
+}
+
+section.empty {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 0vh;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 section h1 {
@@ -530,7 +538,7 @@ section.my-work {}
 }
 
 .terminal-section .container {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
 }
 
@@ -655,7 +663,7 @@ section.my-work {}
 
 .recent-work {
   display: inline-block;
-  margin: 30px auto;
+  margin: 1rem auto 3rem auto;
   width: 90%;
   height: 300px;
   background-image: url(/img/img.png);
@@ -669,7 +677,7 @@ section.my-work {}
 }
 
 .portfolio p {
-  margin: 0;
+  margin: 2.2rem;
 }
 
 .portfolio a {
@@ -688,9 +696,56 @@ section.my-work {}
 
 
 
+/*LAB*/
+
+section.lab
+
+.lab p {
+  margin: 2.2rem;
+}
+
+.lab-wrapper {
+  padding: 1rem 2.2rem 2.2rem 2.2rem;
+}
+.lab-wrapper .row {
+  margin-bottom: 0rem;
+}
+
+.lab-wrapper .col-sm-12, .lab-wrapper .col-xs-12 {
+  margin-bottom: 0 0 2.2rem 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.margin-bottom-22 {
+  margin-bottom: 2.2rem !important;
+}
 
 
-section.lab {}
+
+/*LAB END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section.contacts {}
 
 
@@ -804,6 +859,11 @@ section.contacts {}
 
 
 /*DEVIDER ---------------------------------- */
+
+section.empty .hr {
+  margin: 0;
+}
+
 .hr {
   display: block;
   max-height: 5px;
