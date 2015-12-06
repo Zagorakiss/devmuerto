@@ -285,7 +285,7 @@ $(document).ready(function() {
                 terminal.append("COMMANDS: clear, help, list, echo, fortune\n");
         }
   
-    function list() {
+        function list() {
                 terminal.append("MY SKILLS: html5, css3, less, javascript (native, jQuery, APIs), svg \n- Frameworks: bootstrap, ink, lumx, mdl, materialize, material-ui \n- Others: npm, bower, gulp, postcss, font awesome, icon moon, git \n- Design: photoshop, illustrator \n");
         }
     

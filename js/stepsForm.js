@@ -95,10 +95,11 @@
 		} );
 
 		// pressing enter will jump to next question
-		document.addEventListener( 'keydown', function( ev ) {
-			var keyCode = ev.keyCode || ev.which;
+		// be carefull - sometimes conflict happens because of Terminal section script
+		document.getElementById("theForm").addEventListener('keydown', function( ev ) {
+			var keyCodeForm = ev.keyCodeForm || ev.which;
 			// enter
-			if( keyCode === 13 ) {
+			if( keyCodeForm === 13 ) {
 				ev.preventDefault();
 				self._nextQuestion();
 			}
@@ -106,9 +107,9 @@
 
 		// disable tab
 		this.el.addEventListener( 'keydown', function( ev ) {
-			var keyCode = ev.keyCode || ev.which;
+			var keyCodeForm = ev.keyCodeForm || ev.which;
 			// tab
-			if( keyCode === 9 ) {
+			if( keyCodeForm === 9 ) {
 				ev.preventDefault();
 			} 
 		} );
