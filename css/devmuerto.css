@@ -916,6 +916,8 @@ footer {
   max-width: 100%;
   text-align: center;
   color: #ffa500;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 footer p {
