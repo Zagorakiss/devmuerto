@@ -37,6 +37,13 @@
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
+footer .social [class^="icon-"], footer .social [class*=" icon-"] {
+	font-size: 3.3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: #ffa500;
+}
+
 
 .social [class^="icon-"]:hover, .social [class*=" icon-"]:hover {
 	color: #336d30;
