@@ -13,6 +13,8 @@ $(function() {
 });
 
 
+
+
 jQuery.extend( jQuery.easing,
 {
 	easeInOutQuad: function (x, t, b, c, d) {
@@ -482,3 +484,25 @@ terminal.append("Last login: " + date + "\n" + hintMessage + "\n"); displayPromp
 // in the body and stepform.js
 
 // FORM END ------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+// FOOTER ---------------------------------------------------------------------------
+
+$(function() { 
+  // Replay button
+  $('div.logo').on('click', function(e) {
+    e.preventDefault();
+    setTimeout(function() {
+      drawSVGPaths('svg', 1000, 2000, 50);
+      $('div.logo').blur();
+    }, 300);
+  });
+});
+
+// FOOTER END ---------------------------------------------------------------------------
