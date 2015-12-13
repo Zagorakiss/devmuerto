@@ -11,6 +11,6 @@ $headers = 'From: robot@devmuerto.com' . "\r\n" .
     		'X-Mailer: PHP/' . phpversion();
 
 
-// Отправляем
+// Send
 mail($to, $subject, $message, $headers);
 ?> 
