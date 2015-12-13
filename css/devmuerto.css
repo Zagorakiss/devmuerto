@@ -13,6 +13,18 @@ COLORS END ---------------- */
 
 
 
+
+/*PRELOADER ----------------------- */
+.preloader {position: fixed; left: 0; top: 0; z-index: 100000; width: 100%; height: 100%; overflow: visible; background: #271900 url('/assets/puff.svg') no-repeat center center;}
+/*PRELOADER END --------------------- */
+
+
+
+
+
+
+
+
 /*FONT*/
 @font-face {
   font-family: 'Mex';
