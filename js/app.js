@@ -1,3 +1,22 @@
+// ALTERNATIVE PRELOADER SCRIPT ------------------------------------------
+
+// <script>
+//     $(window).load(function () {  
+//       $('#preloader').fadeOut('slow',function(){$(this).remove();});
+//       replaceWithPaths($('svg'));
+//       startSVGAnimation($('svg'));
+//     });
+//     </script>
+
+// ALTERNATIVE PRELOADER SCRIPT END --------------------------------------
+
+
+
+
+
+
+
+
 // HEADER ---------------------------------------------------
 
 
