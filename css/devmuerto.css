@@ -1186,7 +1186,7 @@ footer svg .st0.rotate, footer svg .st1.rotate, footer svg path.rotate {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 28px;
   height: 2px;
   background: #ffa500;
   /*-webkit-transform: translateX(-50%);
@@ -1285,6 +1285,10 @@ footer svg .st0.rotate, footer svg .st1.rotate, footer svg path.rotate {
     font-size: 24px;
   }
 
+  .menu__link:before {
+    width: 20px;
+  }
+
   .menu__link--external {
     font-size: 17px;
   }
@@ -1309,6 +1313,10 @@ footer svg .st0.rotate, footer svg .st1.rotate, footer svg path.rotate {
 @media screen and (max-width: 420px) {
   .menu__link {
     font-size: 17px;
+  }
+
+   .menu__link:before {
+    width: 14px;
   }
 
   .menu__link--external {
