@@ -56,6 +56,22 @@ footer .social .icon {
 
 
 
+.payways .icon {
+	font-size: 33px;
+	color: #ffa500;
+	transition: all 0.3s ease;
+}
+
+
+.pay-btn .icon {
+	font-size: 26px;
+	color: #ffa500;
+}
+
+.pay-btn:hover .icon {
+	color: #271900;
+}
+
 
 
 .my-work__icons .icon {
